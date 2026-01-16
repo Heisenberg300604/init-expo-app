@@ -1,0 +1,47 @@
+{
+  "name": "create-expo-starter",
+  "version": "1.0.0",
+  "description": "CLI to scaffold Expo React Native apps with NativeWind, Zustand, Axios, and Expo Router",
+  "main": "src/index.js",
+  "bin": {
+    "create-expo-starter": "bin/create-expo-starter.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "expo",
+    "react-native",
+    "cli",
+    "generator",
+    "nativewind",
+    "zustand",
+    "expo-router",
+    "tailwind",
+    "typescript"
+  ],
+  "author": "Nibedan Pati",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nibedanpati/create-expo-starter"
+  },
+  "homepage": "https://github.com/nibedanpati/create-expo-starter#readme",
+  "bugs": {
+    "url": "https://github.com/nibedanpati/create-expo-starter/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md"
+  ],
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^12.3.0",
+    "ora": "^5.4.1"
+  }
+}
