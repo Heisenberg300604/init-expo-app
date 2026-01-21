@@ -1,6 +1,6 @@
 {
   "name": "init-expo-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI to scaffold Expo React Native apps with NativeWind, Zustand, Axios, and Expo Router",
   "main": "src/index.js",
   "bin": {
