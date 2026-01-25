@@ -116,10 +116,22 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    cursor: none !important;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Keep text cursor for inputs */
+  input,
+  textarea,
+  select {
+    cursor: text !important;
   }
 }
 

@@ -1,18 +1,25 @@
 ---
 import { Github, Package } from "lucide-react";
-import { TerminalCommand } from "../react/TerminalCommand";
-import { PhoneMockup } from "../react/PhoneMockup";
+import { EnhancedTerminal } from "../react/EnhancedTerminal";
+import { EnhancedPhoneMockup } from "../react/EnhancedPhoneMockup";
 ---
 
-<section class="pt-32 pb-20 lg:pb-32">
+<section class="min-h-screen flex items-center justify-center pt-20 pb-20">
     <div class="section-container">
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
                 <div
                     class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-xs font-medium mb-6"
                 >
-                    <span class="w-1.5 h-1.5 rounded-full bg-success"></span>
-                    Open Source · Expo SDK 54
+                    <span class="relative flex h-2 w-2">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"
+                        ></span>
+                        <span
+                            class="relative inline-flex rounded-full h-2 w-2 bg-green-500"
+                        ></span>
+                    </span>
+                    Open Source · Expo SDK 52
                 </div>
 
                 <h1
@@ -32,15 +39,15 @@ import { PhoneMockup } from "../react/PhoneMockup";
                 </p>
 
                 <div class="space-y-4 mb-8">
-                    <TerminalCommand
+                    <EnhancedTerminal
                         command="npx init-expo-app my-app"
-                        client:idle
+                        client:visible
                     />
                 </div>
 
                 <div class="flex flex-wrap items-center gap-3">
                     <a
-                        href="https://github.com/Heisenberg300604/init-expo-app"
+                        href="https://github.com/rupali-codes/init-expo-app"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm font-medium hover:opacity-90 transition-opacity"
@@ -49,7 +56,7 @@ import { PhoneMockup } from "../react/PhoneMockup";
                         View on GitHub
                     </a>
                     <a
-                        href="https://npmjs.com"
+                        href="https://www.npmjs.com/package/init-expo-app"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="inline-flex items-center gap-2 px-4 py-2 border border-border rounded-md text-sm font-medium hover:bg-secondary transition-colors"
@@ -61,7 +68,7 @@ import { PhoneMockup } from "../react/PhoneMockup";
             </div>
 
             <div class="hidden lg:block">
-                <PhoneMockup client:visible />
+                <EnhancedPhoneMockup client:visible />
             </div>
         </div>
     </div>

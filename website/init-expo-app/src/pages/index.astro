@@ -11,10 +11,12 @@ import Audience from "../components/astro/Audience.astro";
 import QuickStart from "../components/astro/QuickStart.astro";
 import OpenSource from "../components/astro/OpenSource.astro";
 import Footer from "../components/astro/Footer.astro";
+import { SmoothCursor } from "../components/ui/smooth-cursor";
 import "../styles/global.css";
 ---
 
 <BaseLayout>
+	<SmoothCursor client:load />
 	<div class="min-h-screen bg-background">
 		<Header />
 		<main>
